@@ -1,0 +1,14 @@
+name: test workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Test code
+        run: npm test
+      - name: Finish workflow
+        run: echo "Done with workflow"
