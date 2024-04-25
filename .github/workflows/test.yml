@@ -1,7 +1,7 @@
-name: test workflow
-on: workflow_dispatch
+name: Giraffe Workflow
+on: [workflow_dispatch, push]
 jobs:
-  first-job:
+  Install-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
