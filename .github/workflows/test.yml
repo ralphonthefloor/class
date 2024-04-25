@@ -9,6 +9,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Test code
-        run: npm test-workflow
+        run: npm run test-workflow
       - name: Finish workflow
         run: echo "Done with workflow"
